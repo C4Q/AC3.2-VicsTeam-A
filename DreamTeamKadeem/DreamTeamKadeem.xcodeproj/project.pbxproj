@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		966F9774D347DDDC673384E1 /* Pods_DreamTeamKadeem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9A01FB682942B8724719B9 /* Pods_DreamTeamKadeem.framework */; };
 		9E2710461DF0B015009E7160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2710451DF0B015009E7160 /* AppDelegate.swift */; };
 		9E2710481DF0B015009E7160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2710471DF0B015009E7160 /* ViewController.swift */; };
 		9E27104B1DF0B015009E7160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2710491DF0B015009E7160 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A9A01FB682942B8724719B9 /* Pods_DreamTeamKadeem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamTeamKadeem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0595D699B39D499F680255 /* Pods-DreamTeamKadeem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamTeamKadeem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamTeamKadeem/Pods-DreamTeamKadeem.debug.xcconfig"; sourceTree = "<group>"; };
 		9E2710421DF0B015009E7160 /* DreamTeamKadeem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamTeamKadeem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2710451DF0B015009E7160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E2710471DF0B015009E7160 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9E27104C1DF0B015009E7160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E27104F1DF0B015009E7160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E2710511DF0B015009E7160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F607EEF0E70467FEEB81B7D5 /* Pods-DreamTeamKadeem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamTeamKadeem.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamTeamKadeem/Pods-DreamTeamKadeem.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966F9774D347DDDC673384E1 /* Pods_DreamTeamKadeem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		335F18417661A4F05309DE66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A9A01FB682942B8724719B9 /* Pods_DreamTeamKadeem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BA3AA92DF1F03F9A70D19DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C0595D699B39D499F680255 /* Pods-DreamTeamKadeem.debug.xcconfig */,
+				F607EEF0E70467FEEB81B7D5 /* Pods-DreamTeamKadeem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9E2710391DF0B014009E7160 = {
 			isa = PBXGroup;
 			children = (
 				9E2710441DF0B015009E7160 /* DreamTeamKadeem */,
 				9E2710431DF0B015009E7160 /* Products */,
+				5BA3AA92DF1F03F9A70D19DE /* Pods */,
+				335F18417661A4F05309DE66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E2710541DF0B015009E7160 /* Build configuration list for PBXNativeTarget "DreamTeamKadeem" */;
 			buildPhases = (
+				4E4E4148D11FE9878FE8BA90 /* [CP] Check Pods Manifest.lock */,
 				9E27103E1DF0B014009E7160 /* Sources */,
 				9E27103F1DF0B014009E7160 /* Frameworks */,
 				9E2710401DF0B014009E7160 /* Resources */,
+				3D67BB837004345AF5AB3A7D /* [CP] Embed Pods Frameworks */,
+				5161433507DE2472FD8B6335 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D67BB837004345AF5AB3A7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamTeamKadeem/Pods-DreamTeamKadeem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E4E4148D11FE9878FE8BA90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5161433507DE2472FD8B6335 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamTeamKadeem/Pods-DreamTeamKadeem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E27103E1DF0B014009E7160 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		9E2710551DF0B015009E7160 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0595D699B39D499F680255 /* Pods-DreamTeamKadeem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DreamTeamKadeem/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		9E2710561DF0B015009E7160 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F607EEF0E70467FEEB81B7D5 /* Pods-DreamTeamKadeem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DreamTeamKadeem/Info.plist;

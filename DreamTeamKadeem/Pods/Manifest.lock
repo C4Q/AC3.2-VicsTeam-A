@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.2.0)
+  - EmojiTextView (1.0)
+  - SwiftyJSON (3.1.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.2)
+  - EmojiTextView (~> 1.0)
+  - SwiftyJSON (~> 3.1)
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  EmojiTextView: 2c43c44e2bf858ef56f371c03bdef0da4fcda24c
+  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
+
+PODFILE CHECKSUM: 2ec3030b14b56d1fe55918eb1c0ef29acb493dc9
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,6 @@
+framework module EmojiTextView {
+  umbrella header "EmojiTextView-umbrella.h"
+
+  export *
+  module * { export * }
+}
